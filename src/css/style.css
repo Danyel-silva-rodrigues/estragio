@@ -1,0 +1,88 @@
+*{
+    padding: 0;margin: 0;
+
+}
+:root{
+ ---cor-pricipal:#44A620;
+ ---font-title:"Poppins", sans-serif;
+
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    
+}
+.contalogo{
+    width: 50vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.contanecard{
+    width: 50vw;
+    background:var(---cor-pricipal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bt{
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 10px;
+    background-color: black;
+    width: 200px;
+    padding-left:20px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right:20px ;
+    border: none;
+    font-size: 20px;
+}
+.sing{
+    background-color: white;
+    color: black;
+}
+.textalt{
+
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgbaner{
+    width: 500px;
+    margin-bottom: 20px;
+
+}
+.card_wel{
+justify-content: space-between;   
+display: flex;
+align-items: center;
+width: 700px;
+font-size: 40px;
+font-family: var(---font-title) ;
+}
+.title_wel{
+font-size: 50px;
+font-family: var(---font-title) ;  
+}
+.conteinerbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

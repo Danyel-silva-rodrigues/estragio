@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    ---cor-pricipal:#44A620;
+    ---font-title:"Poppins", sans-serif;
+   
+   }
+.main_login{
+    background-color: #4da52d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+}
+.conteinerlogin{
+    width: 1000px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+
+}
+
+
+.un{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    flex-direction: column;
+    width: 90%;  
+}
+.conteinecar{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+}
+.conteimg{
+    width: 400px;
+}
+.imbaner{
+    width: 100%;
+}
+.cardLogin{
+    width:300px ;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #207005fd;
+    border-radius: 20px;
+    padding: 20px;
+}
+.titleLogin{
+    font-family:var(---font-title);
+}
+ .label-float input{
+  padding: 5px; 
+  display: inline-block;
+  border: 0;
+ border-bottom:2px solid black ;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+}
+.label-float input:focus{
+  border-bottom: 2px solid black;  
+}
+
+
+.label-float{
+ position: relative;
+ padding-top: 13px;  
+ margin-top: 5%;
+ margin-bottom: 5%;
+}
+.spalofin{
+    padding: 5px;
+    font-family: var(---font-title) ;
+    font-weight: bold;
+    font-size: 18px;
+} 
+.btplog{
+    margin: 20px;
+    width: 100%;
+    padding:10px;
+    border-radius: 5px;
+    border:2px black solid ;
+    font-family: var(---font-title);
+    font-family: 20px;
+    font-weight: bolder;
+    background-color: white;
+    transition: 1.0s;
+    
+
+}
+.btplog:hover{
+    background-color:black;
+    color: white;
+}
+.main_log{
+    width: 500px; 
+    margin: 200px;
+}
+
