@@ -1,3 +1,30 @@
+let btn = document.querySelector('#versenha')
+
+
+btn.addEventListener('click', ()=>{
+let inputSenha = document.querySelector('#senha')
+
+if(inputSenha.getAttribute('type') == 'password'){
+    inputSenha.setAttribute('type','text')
+}else{
+    inputSenha.setAttribute('type','password')
+}
+
+})
+
+let btnConfimarsenha = document.querySelector('#vercomfimasenha')
+
+
+btnConfimarsenha.addEventListener('click', ()=>{
+let inputSenha = document.querySelector('#confisenha')
+
+if(inputSenha.getAttribute('type') == 'password'){
+    inputSenha.setAttribute('type','text')
+}else{
+    inputSenha.setAttribute('type','password')
+}
+
+})
 
 
 
