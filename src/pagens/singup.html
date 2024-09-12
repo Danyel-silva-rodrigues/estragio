@@ -21,29 +21,31 @@
             <h1>Cadatrar</h1>
             <div class="label-flot">
                 <input type="text" id="nome" placeholder="" required>
-                <label for="nome">nome</label>
+                <label id="labelnome" for="nome">nome</label>
             </div>
 
             <div class="label-flot">
               <input type="text" id="usuario" placeholder="" required>
-              <label for="usuario">usuario</label>
+              <label id="labelusuario" for="usuario">usuario</label>
           </div>
     
             <div class="label-flot">
                 <input type="password" id="senha" placeholder="" required>
-                <label for="senha">senha</label>
+                <label id="labelsenha" for="senha">senha</label>
                 <i id="versenha" class="fa-regular fa-eye"></i>
             </div>
 
             <div class="label-flot">
               <input type="password" id="confisenha" placeholder="" required>
-              <label for="confisenha">comfirma senha</label>
+              <label id="labelconfisenha"  for="confisenha">comfirma senha</label>
               <i id="vercomfimasenha" class="fa-regular fa-eye"></i>
           </div>
             <div class="justify-center ">
-                <button>cadatrar</button>
+                <button onclick="cadastrar()">cadatrar</button>
             
-      </div>
+            </div>
+        </div>
+
     </main>
     <script src="/src/js/index.js"></script>
 </body>
