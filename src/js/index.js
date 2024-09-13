@@ -20,31 +20,34 @@ let confisenha = document.querySelector('#confisenha')
 let labelconfisenha = document.querySelector('#labelconfisenha')
 let validComfirma = false
 
+let msgerro = document.querySelector('#msgErrot')
+let msgsucesso = document.querySelector('#msgSuccess')
+
 nome.addEventListener('keyup',()=>{
     if (nome.value.length <= 2) {
         labelnome.setAttribute('style','color:red')
         labelnome.innerHTML = 'Nome *insira no minimo 3 caracteres' 
         nome.setAttribute('style','border-color:red')
-        let validNome = false
+        validNome = false
     }else{
         labelnome.setAttribute('style','color:green')
         labelnome.innerHTML = 'nome'
         nome.setAttribute('style','border-color:green')
-        let validNome = true
+        validNome = true
     }
 })
 
 usuario.addEventListener('keyup',()=>{
-    if (usuario.value.length <= 4) {
+    if (usuario.value.length <= 10) {
         labelusuario.setAttribute('style','color:red')
-        labelusuario.innerHTML = 'Usuario *insira no minimo 5 caracteres' 
+        labelusuario.innerHTML = 'Matricula *Insira uma matricula valida' 
         usuario.setAttribute('style','border-color:red')
-        let validUsuario = false 
+        validUsuario = false 
     }else{
         labelusuario.setAttribute('style','color:green')
         labelusuario.innerHTML = 'Usuario'
         usuario.setAttribute('style','border-color:green')
-        let validUsuario = true 
+         validUsuario = true 
     }
 })
 
@@ -53,12 +56,12 @@ senha.addEventListener('keyup',()=>{
         labelsenha.setAttribute('style','color:red')
         labelsenha.innerHTML = '<strong>Senha *insira no minimo 8 caracteres</strong>' 
         senha.setAttribute('style','border-color:red')
-        let validSenha = false 
+        validSenha = false 
     }else{
         labelsenha.setAttribute('style','color:green')
         labelsenha.innerHTML = 'senha'
         senha.setAttribute('style','border-color:green')
-        let validSenha = true 
+        validSenha = true 
     }
 })
 
@@ -67,22 +70,47 @@ confisenha.addEventListener('keyup',()=>{
         labelconfisenha.setAttribute('style','color:red')
         labelconfisenha.innerHTML = 'Confirma Senha *as senhas nao conferem' 
         confisenha.setAttribute('style','border-color:red')
-        let validComfirma = false
+        validComfirma = false
     }else{
         labelconfisenha.setAttribute('style','color:green')
         labelconfisenha.innerHTML = 'Confirma Senha'
         confisenha.setAttribute('style','border-color:green')
-        let validComfirma = true
+         validComfirma = true
     }
 })
 
-function cadastrar() {
+function cadastrar(){
+ if(validNome && validUsuario && validSenha && validComfirma){
+   let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
 
- if (validComfirma && validNome && validSenha && validUsuario) {
-    alert('Preencha todos os campos')
+   listaUser.push(
+    {
+        nomeCad: nome.value,
+        usercad: usuario.value,
+        senhaCad: senha.value
+    }
+   )
+   
+   localStorage.setItem('listaUser',JSON.stringify(listaUser))
+   
+   
+    msgsucesso.setAttribute('style','display:block')
+    msgsucesso.innerHTML = '<strong> cadastrando usuario... ;)</strong>'
+    msgerro.setAttribute('style','display:none')
+    msgerro.innerHTML = ''
+
+    setTimeout(()=>{
+        window.location.href = 'login.html'
+    },3000)
+    
+
+
     
  } else {
-    alert('bom')
+    msgerro.setAttribute('style','display:block')
+    msgerro.innerHTML = '<strong> preencha todos os campos  antes de cadrastrar</strong>'
+    msgsucesso.setAttribute('style','display:none')
+    msgsucesso.innerHTML = ''
  }
     
 }

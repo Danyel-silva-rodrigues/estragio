@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/src/css/styll.css ">
-    <title>cadatrar</title>
+    <title>Cadastre-se</title>
 </head>
 <body>
     <main class="conteinerG">
@@ -18,30 +18,32 @@
             <img class="banerif" src="/src/img/2lVwkrSX8X4IRyA17FS6QvTpRbY.svg" alt="">
         </div>
         <div class="card">
-            <h1>Cadatrar</h1>
+            <h1>Cadastra</h1>
+            <div id="msgErrot"></div>
+            <div id="msgSuccess"></div>
             <div class="label-flot">
                 <input type="text" id="nome" placeholder="" required>
-                <label id="labelnome" for="nome">nome</label>
+                <label id="labelnome" for="nome">Nome</label>
             </div>
 
             <div class="label-flot">
               <input type="text" id="usuario" placeholder="" required>
-              <label id="labelusuario" for="usuario">usuario</label>
+              <label id="labelusuario" for="usuario">Matricula</label>
           </div>
     
             <div class="label-flot">
                 <input type="password" id="senha" placeholder="" required>
-                <label id="labelsenha" for="senha">senha</label>
+                <label id="labelsenha" for="senha">Senha</label>
                 <i id="versenha" class="fa-regular fa-eye"></i>
             </div>
 
             <div class="label-flot">
               <input type="password" id="confisenha" placeholder="" required>
-              <label id="labelconfisenha"  for="confisenha">comfirma senha</label>
+              <label id="labelconfisenha"  for="confisenha">Comfirma senha</label>
               <i id="vercomfimasenha" class="fa-regular fa-eye"></i>
           </div>
             <div class="justify-center ">
-                <button onclick="cadastrar()">cadatrar</button>
+                <button onclick="cadastrar()">Cadastrar</button>
             
             </div>
         </div>
