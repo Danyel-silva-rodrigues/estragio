@@ -19,19 +19,21 @@
         </div>
         <div class="card">
             <h1>Entrar</h1>
+            <div id="msgErrot"></div>
+            <div id="msgSuccess"></div>
            
             <div class="label-flot">
                 <input type="text" id="usuario" placeholder="" required>
-                <label id="labelusuario" for="usuario">usuario</label>
+                <label id="userlabel" for="usuario">Matricula</label>
             </div>
     
             <div class="label-flot">
                 <input type="password" id="senha" placeholder="" required>
-                <label for="senha">senha</label>
-                <i id="versenha" class="fa-regular fa-eye"></i>
+                <label id="senhalabel" for="senha">senha</label>
+                <i class="fa-regular fa-eye"></i>
             </div>
             <div class="justify-center ">
-                <button>Entrar</button>
+                <button onclick="Entra()">Entrar</button>
             </div>
             <div class="justify-center ">
                 <hr>
@@ -45,6 +47,6 @@
       </div>
 
     </main>
-    <script src="/src/js/index.js"></script>
+    <script src="/src/js/login.js"></script>
 </body>
 </html>
