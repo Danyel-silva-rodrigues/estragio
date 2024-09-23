@@ -71,8 +71,10 @@ button:hover{
     transition: all .4s ease-out;
 }
 .justify-center{
+    gap: 20px;
     display: flex;
     justify-content: center;
+    text-align: center;
 
 }
 hr{
@@ -128,4 +130,12 @@ a:hover{
     padding: 10px;
     border-radius: 4px;
     display: none;
+}
+.saibaMais{
+    background-color: #34D02A;
+}
+.conteideFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around   ;
 }

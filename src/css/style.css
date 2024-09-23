@@ -211,12 +211,13 @@ header{
     
 } 
 .flex{
-    height: 100%;
     padding-top: 100px;
     gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+    padding-bottom: 10px;
 }
 .titulo{
     color: white;
@@ -224,10 +225,35 @@ header{
 .sair{
     width: 150px;
 }
+
+
+
+footer{
+    height: 100px;
+    padding: 20px;
+    background-color: #44A620;
+    
+}
+
+
+@media only screen and (max-width:600px) {
+    
+.conteinerS{
+    height: 700px;
+}
+
+    
+}
 @media only screen and (max-width: 450px) {
-.conteinerimg{
-    width: 200px;
-    height: 200px;
+    
+  
+    .conteinerS{
+        height: 500px;
+    }
+    
+.img{
+  display: none   ;
+
 
 }
 
