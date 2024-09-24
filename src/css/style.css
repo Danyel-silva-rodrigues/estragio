@@ -47,9 +47,9 @@ body{
 }
 
 .conteinerimg{
-    width: 300px;
+    width: 500px;
     min-width: 150px;
-    height: 300px;
+    height: 500px;
     min-height: 150px;
 }
 .banerif{
@@ -129,16 +129,39 @@ header{
     background: #fefefe;
 }
 
-@media only screen and (max-width: 1320px) {
+@media only screen and (max-width: 1330px) {
     header{
-        padding: 0 50px;
+        
+       padding: 0 50px;
     }
+    .conteinerimg{
+        width: 400px;
+        height: 400px;
+    }
+     
+
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     header{
         padding: 0 30px;
     }
+    
+.conteinerimg{
+    width: 300px;
+    min-width: 150px;
+    height: 300px;
+    min-height: 150px;
+}
+}
+
+@media only screen and (max-width: 570px) {
+.conteinerimg{
+    width: 200px;
+    min-width: 150px;
+    height: 200px;
+    min-height: 150px;
+}
 }
 
 @media only screen and (max-width: 900px) {
@@ -187,6 +210,8 @@ header{
     margin-bottom: 12px;
     color: red;
   }
+
+  
 }
 .conteinerS{
     border-radius: 10px;
@@ -236,25 +261,16 @@ footer{
 }
 
 
-@media only screen and (max-width:600px) {
-    
-.conteinerS{
-    height: 700px;
-}
 
-    
-}
-@media only screen and (max-width: 450px) {
-    
-  
+
+@media only screen and (max-width: 500px) {
+   
     .conteinerS{
         height: 500px;
     }
     
-.img{
-  display: none   ;
-
-
+    .img{
+        display:none;
+    }
 }
 
-}
