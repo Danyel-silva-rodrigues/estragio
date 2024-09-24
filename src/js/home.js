@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
         logado.innerHTML = 'Usuário não encontrado';
     }
 
-    // if (localStorage.getItem('token') == null) {
-    //     alert('Você precisa estar logado para acessar essa página');
-    //     window.location.href = 'login.html';
-    // }
+    if (localStorage.getItem('token') == null) {
+        alert('Você precisa estar logado para acessar essa página');
+        window.location.href = 'login.html';
+    }
 
     let hamburger = document.querySelector('.hamburger');
     let navBar = document.querySelector('.nav-bar');

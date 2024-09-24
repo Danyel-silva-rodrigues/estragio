@@ -64,11 +64,17 @@ button{
     border-radius: 4px;
     cursor: pointer;
     outline: none;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  transition: all 0.1s ease-in;
+  
 }
 button:hover{
     background-color: #44A620;
     color: black;
-    transition: all .4s ease-out;
+   
+   gap: 10px;
 }
 .justify-center{
     gap: 20px;
@@ -130,4 +136,21 @@ a:hover{
     padding: 10px;
     border-radius: 4px;
     display: none;
+}
+.conteinerCad{
+    border-radius: 10px;
+    width: 80%;
+    height: 600px;
+    min-width: 300px;
+    background:;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   padding: 30px;
+  align-items: center;
+}
+.textCard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
